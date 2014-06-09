@@ -8,10 +8,9 @@ Examples
 First, create directory 'data' under bin directory;
 Sencond, do as follows:
 
-  xmlSettings xml;
-  if (xml.loadFile("setting.xml")){
+  	xmlSettings xml;
+	if (xml.loadFile("setting.xml")){
 		param1 = xml.getValue("setting:param1", param1);
-		
 	}else{
 		xml.setValue("setting:param1", param1);
 		xml.saveFile("setting.xml");
